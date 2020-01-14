@@ -5,17 +5,20 @@
       <slot />
     </div>
     <Footer />
+    <cookie-law theme="dark-lime"></cookie-law>
   </div>
 </template>
 
 <script>
+import CookieLaw from "vue-cookie-law";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 export default {
   components: {
     Footer,
-    Header
+    Header,
+    CookieLaw
   }
 };
 </script>
