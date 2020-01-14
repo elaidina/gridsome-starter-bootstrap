@@ -9,7 +9,7 @@
       >checkout my other projects</a>
       <hr />
       <p>
-        <strong>have a nice day!</strong>
+        <strong>by visiting this website you agree that we use cookies</strong>
       </p>
     </div>
     <Footer />
