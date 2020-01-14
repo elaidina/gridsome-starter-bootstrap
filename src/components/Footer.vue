@@ -1,8 +1,18 @@
 <template>
   <footer class="page-footer font-small teal py-4">
-    <div class="footer-copyright text-center">Designed and coded by:
-      <a target="_blank" rel="noopener" href="https://loke.dev/"> Loke Carlsson</a>
+    <div class="footer-copyright text-center">
+      by elaidina
+      <a
+        target="_blank"
+        rel="noopener"
+        href="https://elaidina.netlify.com"
+      >checkout my other projects</a>
+      <hr />
+      <p>
+        <strong>by visiting this website you agree that we use cookies</strong>
+      </p>
     </div>
+    <Footer />
   </footer>
 </template>
 
