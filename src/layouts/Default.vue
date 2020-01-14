@@ -27,11 +27,6 @@
         </div>
 
         <!-- Optional -->
-        <div slot="declineContent">
-          OPT OUT
-        </div>
-
-        <!-- Optional -->
         <div slot="acceptContent">
           GOT IT!
         </div>

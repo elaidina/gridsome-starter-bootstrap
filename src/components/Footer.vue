@@ -1,16 +1,10 @@
 <template>
   <footer class="page-footer font-small teal py-4">
     <div class="footer-copyright text-center">
-      by elaidina
-      <a
-        target="_blank"
-        rel="noopener"
-        href="https://elaidina.netlify.com"
-      >checkout my other projects</a>
-      <hr />
-      <p>
-        <strong>by visiting this website you agree that we use cookies</strong>
-      </p>
+      by elaidina <strong>2020 </strong>
+      <a target="_blank" rel="noopener" href="https://elaidina.netlify.com"
+        >checkout my other projects</a
+      >
     </div>
     <Footer />
   </footer>

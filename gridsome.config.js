@@ -1,28 +1,28 @@
 module.exports = {
-  siteName: 'Gridsome starter bootstrap',
-  siteDescription: 'A starter project for Gridsome with Bootstrap and some other useful tools.',
-  siteUrl: 'https://gridsome-starter-bootstrap.loke.dev',
+  siteName: "Pictures from Europe",
+  siteDescription: "A collectionof beautiful places in Europe.",
+  siteUrl: "https://picturesfromeurope.netlify.com",
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: "@gridsome/source-filesystem",
       options: {
-        path: 'blog/**/*.md',
-        typeName: 'BlogPost',
+        path: "blog/**/*.md",
+        typeName: "BlogPost",
         resolveAbsolutePaths: true,
         remark: {
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-        },
-      },
-    },
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-72659574-10'
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+        }
       }
     },
     {
-      use: '@gridsome/plugin-sitemap',
+      use: "@gridsome/plugin-google-analytics",
+      options: {
+        id: "UA-72659574-10"
+      }
+    },
+    {
+      use: "@gridsome/plugin-sitemap",
       options: {
         cacheTime: 600000
       }
@@ -30,12 +30,11 @@ module.exports = {
   ],
   css: {
     loaderOptions: {
-      scss: {
-      }
+      scss: {}
     }
   },
   devServer: {
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     port: 8080
   }
-}
+};
