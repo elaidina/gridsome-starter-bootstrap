@@ -2,6 +2,40 @@
   <div class="layout">
     <div id="content-wrapper">
       <Header />
+      <vue-cookie-accept-decline
+        :ref="'myPanel1'"
+        :elementId="'myPanel1'"
+        :debug="false"
+        :position="'bottom-left'"
+        :type="'floating'"
+        :disableDecline="false"
+        :transitionName="'slideFromBottom'"
+        :showPostponeButton="false"
+        @status="cookieStatus"
+        @clicked-accept="cookieClickedAccept"
+        @clicked-decline="cookieClickedDecline"
+      >
+        <!-- Optional -->
+        <div slot="postponeContent">
+          &times;
+        </div>
+
+        <!-- Optional -->
+        <div slot="message">
+          We use cookies to ensure you get the best experience on our website.
+          <a href="https://cookiesandyou.com/" target="_blank">Learn More...</a>
+        </div>
+
+        <!-- Optional -->
+        <div slot="declineContent">
+          OPT OUT
+        </div>
+
+        <!-- Optional -->
+        <div slot="acceptContent">
+          GOT IT!
+        </div>
+      </vue-cookie-accept-decline>
       <slot />
     </div>
     <Footer />
@@ -11,15 +45,16 @@
 <script>
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import VueCookieAcceptDecline from "vue-cookie-accept-decline";
 
 export default {
   components: {
     Footer,
-    Header
+    Header,
+    VueCookieAcceptDecline
   }
 };
 </script>
-
 
 <style lang="scss">
 body,
