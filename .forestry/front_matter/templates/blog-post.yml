@@ -18,4 +18,5 @@ fields:
   name: image
   label: image
 pages:
+- blog/hello-there-from-europe.md
 - blog/new-post.md
